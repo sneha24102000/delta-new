@@ -19,4 +19,4 @@ jobs:
         run: |
           echo Downloading cdefense CLI
           curl https://raw.githubusercontent.com/CloudDefenseAI/cd/master/latest/cd-latest-linux-x64.tar.gz > /usr/local/bin/cdefense && chmod +x /usr/local/bin/cdefense
-          cdefense online --api-key=API_KEY --repository-url="$REPO_URL" --pr-id="$GITHUB_PR_NUMBER"
+          cdefense online --api-key="$API_KEY" --repository-url="$REPO_URL" --pr-id="$GITHUB_PR_NUMBER"
